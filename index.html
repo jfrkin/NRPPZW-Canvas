@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aim practice</title>
+    <style>
+      canvas {
+        border: 1px solid #000000;
+        background-color: #f1f1f1;
+      }
+
+      #buttons{
+        display: flex;
+      }
+
+      #successMessage{
+        font-weight: 500;
+        color: green;
+      }
+    </style>
+  </head>
+  <body onload="startGame()">
+    <h1>Aim practice</h1>
+    <div id="buttons">
+      <button id="stopBtn" onclick="stopGame()">Stop</button>
+      <button id="continueBtn" onclick="continueGame()" hidden>Continue</button>
+      <button id="retryBtn" onclick="retryGame()">Retry</button>
+    </div>
+    <div>
+      <h2 id="successMessage"></span>
+    </div>
+  </body>
+  <script src="game.js"></script>
+</html>
